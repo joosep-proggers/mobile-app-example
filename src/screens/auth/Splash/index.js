@@ -3,10 +3,16 @@ import { Text, View, Image, Pressable } from "react-native";
 import { styles } from "./styles";
 import Button from "../../../components/Button";
 
-const Splash = () => {
-  const handlePress = () => {
-    console.log("pres");
+const Splash = ({navigation}) => {
+
+  const onSignUp = () => {
+    navigation.navigate('Signup');
   };
+
+  const onSignIn = () => {
+    navigation.navigate('Signin')
+  }
+
   return (
     <View style={styles.container}>
       <Image
@@ -20,8 +26,8 @@ const Splash = () => {
         <Text style={styles.title}>Here!</Text>
       </View>
 
-      <Button title="Sign Up" onPress={handlePress}></Button>
-      <Pressable onPress={handlePress}>
+      <Button title="Sign Up" onPress={onSignUp}></Button>
+      <Pressable onPress={onSignIn}>
         <Text style={styles.signInButton}>Sign In</Text>
       </Pressable>
     </View>
