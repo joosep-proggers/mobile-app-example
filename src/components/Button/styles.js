@@ -8,7 +8,6 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 8,
     width: "100%",
     borderRadius: 8,
-    flex: 1
   },
   title: {
     color: colors.white,
