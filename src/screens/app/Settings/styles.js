@@ -29,5 +29,8 @@ export const styles = StyleSheet.create({
     button: {
         paddingVertical: 12,
         marginTop: 16
+    },
+    textArea: {
+        minHeight: 120
     }
 })
